@@ -3,6 +3,8 @@ package optional.timkiemnhiphansudungdequy;
 public class BinarySearchRecursion {
 
     int binarySearch(int[] array, int low, int high, int x) {
+        if (low < 0 || high >= array.length)
+            return -1;
         if (high >= low) {
             int mid = low + (high - low) / 2;
 
